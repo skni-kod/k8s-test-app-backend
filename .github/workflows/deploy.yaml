@@ -17,6 +17,9 @@ on:
         required: true
         type: boolean
         default: true
+      tag:
+        type: string
+        required: true
 
 jobs:
   call-central-docker-build:
@@ -35,3 +38,4 @@ jobs:
       
       dockerfile_path: 'Dockerfile'
       lint_dockerfile: true
+      tag: ${{ inputs.tag }}
