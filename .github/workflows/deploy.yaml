@@ -21,7 +21,7 @@ on:
 jobs:
   call-central-docker-build:
     # Odwołanie do Twojego centralnego repozytorium
-    uses: skni-kod/skni-platform-workflows/.github/workflows/docker-image-creation.yaml@main
+    uses: skni-kod/skni-platform-workflows/.github/workflows/docker-build.yaml@main
     with:
       # Jeśli deweloper wpisał własne SHA w workflow_dispatch, używamy go. 
       # W przeciwnym wypadku domyślnie bierzemy SHA commita z kontekstu wywołania.
